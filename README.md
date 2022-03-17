@@ -11,6 +11,7 @@ Simple &amp; Basic Android application that make you set your name and birthday 
 
 - **java**
 - **Android Studio**
+- **SDK: API 21, Android 5.0 (Lollipop) **
 
 
 ## Screenshot:
