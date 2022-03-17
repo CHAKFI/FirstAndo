@@ -14,8 +14,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginHorizontal="50sp"
-        android:layout_marginBottom="50sp"
-
         >
         <TextView
             android:layout_width="wrap_content"
@@ -62,28 +60,30 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="#008080"
             android:text="Verify"
             />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="#008080"
             android:text="Cancel"
 
             />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginHorizontal="50sp"
-        android:layout_marginBottom="50sp"
+        android:layout_marginTop="50sp"
         >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             android:textSize="28sp"
+            android:text="ok"
             />
     </LinearLayout>
 
