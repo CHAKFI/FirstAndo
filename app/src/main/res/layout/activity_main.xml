@@ -18,9 +18,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Name: "
-            android:textSize="20sp"
             android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="Name: "
             />
         <EditText
             android:layout_width="match_parent"
@@ -39,9 +39,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="BirthDay: "
-            android:textSize="20sp"
+            android:textAlignment="center"
             android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="BirthDay: "
             />
         <EditText
             android:id="@+id/birth"
@@ -82,8 +83,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:textSize="28sp"
-            android:text="ok"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:text="You are: "
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:hint="000"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:text=" years old"
             />
     </LinearLayout>
 
