@@ -6,3 +6,12 @@ Simple &amp; Basic Android application that make you set your name and birthday 
 > By [CHAKFI Ahmed](https://www.linkedin.com/in/chakfi-ahmed/)
 
 ## MASTER SYSTEMES INTELLIGENTS ET MOBILES.
+
+## Features:
+
+- **java**
+- **Android Studio**
+
+
+## Screenshot:
+ > Coming Soon... : 
