@@ -47,7 +47,6 @@
             android:textColor="@color/black"
             android:textSize="20sp"
             android:text="BirthYear: "
-            android:inputType="number"
             />
         <EditText
             android:id="@+id/birth"
@@ -55,6 +54,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             android:hint="Enter Your birth year..."
+            android:inputType="number"
             />
     </LinearLayout>
 

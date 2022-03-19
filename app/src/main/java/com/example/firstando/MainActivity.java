@@ -21,6 +21,10 @@ public class MainActivity extends AppCompatActivity {
 
         // Declaring variables
 
+        EditText nm = findViewById(R.id.name);
+        EditText bt = findViewById(R.id.birth);
+        TextView dispName = findViewById(R.id.nameText);
+        TextView res = findViewById(R.id.resultText);
         Button ve = findViewById(R.id.verify);
         Button ca = findViewById(R.id.cancel);
 
@@ -29,12 +33,6 @@ public class MainActivity extends AppCompatActivity {
             @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
             public void onClick(View view) {
-
-
-                EditText nm = findViewById(R.id.name);
-                EditText bt = findViewById(R.id.birth);
-                TextView dispName = findViewById(R.id.nameText);
-                TextView res = findViewById(R.id.resultText);
 
                 String n = nm.getText().toString();
                 int b = Integer.parseInt(bt.getText().toString());
