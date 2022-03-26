@@ -30,6 +30,7 @@
             android:textColor="@color/black"
             android:layout_marginLeft="30sp"
             android:hint="Enter Your Name..."
+            android:inputType="text"
             />
     </LinearLayout>
 
