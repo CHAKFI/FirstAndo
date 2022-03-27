@@ -107,14 +107,6 @@
         android:layout_marginTop="50sp"
         >
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:textAlignment="center"
-            android:textSize="20sp"
-            android:text="You are: "
-            />
-        <TextView
             android:id="@+id/resultText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -122,14 +114,6 @@
             android:textAlignment="center"
             android:textSize="20sp"
             android:hint="000"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:textAlignment="center"
-            android:textSize="20sp"
-            android:text=" years old"
             />
     </LinearLayout>
 

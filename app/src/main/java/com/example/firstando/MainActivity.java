@@ -40,11 +40,15 @@ public class MainActivity extends AppCompatActivity {
                 int b = Integer.parseInt(bt.getText().toString());
                 Date d = new Date();
 
-                if(String.valueOf(b) == ""){
+                if(String.valueOf(b) == "") {
                     res.setText("Please Rerty");
-                }else{
+                }else {
                     int y = (d.getYear() + 1900) - b;
-                    res.setText(String.valueOf(y));
+                    if( y < 18 && y > 0 ) {
+                        res.setText("Sorry, you are minor");
+                    }else if (y > 18){
+                        res.setText(String.valueOf(y));
+                    }
                 }
 
 //                int age = ((Calendar.YEAR) + 2022) - b;
