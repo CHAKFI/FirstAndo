@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         // Declaring variables
 
         EditText nm = findViewById(R.id.name);
-        EditText bt = findViewById(R.id.birth);
+        EditText bt =  findViewById(R.id.birth);
         TextView dispName = findViewById(R.id.nameText);
         TextView res = findViewById(R.id.resultText);
         Button ve = findViewById(R.id.verify);
@@ -40,14 +40,14 @@ public class MainActivity extends AppCompatActivity {
                 int b = Integer.parseInt(bt.getText().toString());
                 Date d = new Date();
 
-                if(String.valueOf(b) == "") {
+                if(String.valueOf(b).matches("")) {
                     res.setText("Please Rerty");
                 }else {
                     int y = (d.getYear() + 1900) - b;
                     if( y < 18 && y > 0 ) {
                         res.setText("Sorry, you are minor");
                     }else if (y > 18){
-                        res.setText(String.valueOf(y));
+                        res.setText("Major, "+String.valueOf(y));
                     }
                 }
 
