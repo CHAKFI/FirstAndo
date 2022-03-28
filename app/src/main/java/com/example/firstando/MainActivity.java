@@ -5,6 +5,7 @@ import android.os.Build;import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -37,13 +38,14 @@ public class MainActivity extends AppCompatActivity {
                 String n = nm.getText().toString();
                 dispName.setText("Hi, "+ n);
 
-                int b = Integer.parseInt(bt.getText().toString());
+                String b = bt.getText().toString();
                 Date d = new Date();
 
-                if(String.valueOf(b).matches("")) {
-                    res.setText("Please Rerty");
+                if(TextUtils.isEmpty(bt.getText().toString())) {
+                    bt.setError("Please set a number");
+                    return;
                 }else {
-                    int y = (d.getYear() + 1900) - b;
+                    int y = (d.getYear() + 1900) - Integer.parseInt(b);
                     if( y < 18 && y > 0 ) {
                         res.setText("Sorry, you are minor");
                     }else if (y > 18){
