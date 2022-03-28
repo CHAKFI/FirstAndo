@@ -96,7 +96,6 @@
             android:textColor="@color/black"
             android:textAlignment="center"
             android:textSize="20sp"
-            android:hint="- - - -"
             />
     </LinearLayout>
 
@@ -113,7 +112,6 @@
             android:textColor="@color/black"
             android:textAlignment="center"
             android:textSize="20sp"
-            android:hint="000"
             />
     </LinearLayout>
 
