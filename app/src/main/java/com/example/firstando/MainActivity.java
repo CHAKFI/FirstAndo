@@ -35,17 +35,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                String n = nm.getText().toString();
-                dispName.setText("Hi, "+ n);
-
-                String b = bt.getText().toString();
                 Date d = new Date();
+                String n = nm.getText().toString();
+                String b = bt.getText().toString();
 
-                if(TextUtils.isEmpty(bt.getText().toString())) {
-                    bt.setError("Please set a number");
+                if(TextUtils.isEmpty(b) || TextUtils.isEmpty(n) ) {
+                    nm.setError("Please set your name ");
+                    bt.setError("Please set your birth year");
                     return;
                 }else {
                     int y = (d.getYear() + 1900) - Integer.parseInt(b);
+                    dispName.setText("Hi, "+ n);
                     if( y < 18 && y > 0 ) {
                         res.setText("Sorry, you are minor");
                     }else if (y > 18){
